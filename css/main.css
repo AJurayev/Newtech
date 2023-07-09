@@ -87,8 +87,6 @@ li {
   align-items: center;
   margin: 0 auto;
 }
-.nav-item {
-}
 .nav-link {
   font-family: Roboto;
   font-size: 14px;
@@ -127,6 +125,12 @@ li {
 .nav-link:hover.nav-link::before {
   width: 100%;
 }
+.nav-link:focus {
+  color: #FCDB5C !important;
+}
+.nav-link:focus.nav-link::before {
+  width: 100%;
+}
 /* --------------------------------NAVBAR END--------------------------- */
 .title-block {
   width: 100%;
@@ -142,6 +146,7 @@ li {
   width: 100%;
   min-height: 775px;
   background-color: rgba(0,0,0,.6);
+  z-index: 1;
 }
 .internal-title {
   padding-top: 93px;
@@ -158,6 +163,10 @@ li {
   text-align: center;
   max-width: 380px;
   position: relative;
+  z-index: 10;
+}
+.map-img {
+  z-index: 10;
 }
 .internal-title__info::before {
   content: "";
