@@ -14,3 +14,21 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 // ------------------------------ACCORDION----------------------
+// ------------------------------OWL-CAROUSEL-------------------
+$('.main-six__owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:4
+      }
+  }
+})
+// ------------------------------OWL-CAROUSEL-------------------
